@@ -1,0 +1,22 @@
+<app-hero></app-hero>
+
+<div class="mb-24 mx-28">
+    <div class="w-44 m-auto pb-16">
+        <p class="font-serif font-semibold text-3xl mb-3 text-[#646464] tracking-wider">Categories</p>
+        <hr class="text-[#7D9D9C] border-5">
+    </div>
+
+    <div class="flex gap-x-10">
+        <div *ngFor="let cat of categories; let i = index; trackBy: trackByFn">
+            <app-categories [category]="cat" paragh="Welcome to our Beauty Center, where beauty meets expertise. At our center, 
+            we pride ourselves on being more than just a place for beauty treatments;" 
+            [photo]="'../../../../assets/Images/Home/Cat' + (i + 1) + '.jpg'" [link]="cat"></app-categories>
+        </div>
+    
+        <app-categories category='Package' paragh="Welcome to our Beauty Center, where beauty meets expertise. At our center, 
+        we pride ourselves on being more than just a place for beauty treatments;" link="Package" 
+        photo="../../../../assets/Images/Home/Pack.jpg"></app-categories>
+    </div>
+</div>
+
+<app-about-us></app-about-us>

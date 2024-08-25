@@ -1,0 +1,21 @@
+<!-- Include Font Awesome library -->
+<div class="Con">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<div *ngIf="servUserM && servUserM.length">
+    <div class="container mx-auto Con "> <!-- Added mt-8 class here for top margin -->
+        <h1 class="text-2xl font-bold mb-4">Your Services </h1>
+        <div>
+            <div *ngFor="let item of servUserM; let i = index" >
+                <div class="card">
+                <div class="flex items-center mb-">
+                    <h3 class="mr-6">{{ item.serviceName }}</h3>
+                    <h4 class="mr-6">{{ item.serviceInfo.price }}</h4>
+                    <button class="btn" (click)="deletePackage( item.userId , item.serviceId)"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        
+    </div>
+</div>
+</div>
+</div>
+</div>

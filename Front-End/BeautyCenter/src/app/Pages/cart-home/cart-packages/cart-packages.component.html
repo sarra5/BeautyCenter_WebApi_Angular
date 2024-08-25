@@ -1,0 +1,21 @@
+<!-- Include Font Awesome library -->
+<div class="Con">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<div *ngIf="packageUser && packageUser.length">
+
+<div class="container mx-auto">
+    <h1 class="text-2xl font-bold mb-4">Your Packages </h1>
+    <div>
+        <div *ngFor="let item of packageUser; let i = index" >
+        <div class="card">
+            <div class="flex items-center mb-">
+                <h3 class="mr-6">{{ item.packageName }}</h3>
+                <h3 class="mr-6">{{ item.packagInfo.price }}</h3>
+                <button class="btn" (click)="deleteById(item.userId,item.packageId)"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+</div>

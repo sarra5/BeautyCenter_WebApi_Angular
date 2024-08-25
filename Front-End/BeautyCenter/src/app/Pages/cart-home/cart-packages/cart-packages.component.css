@@ -1,0 +1,25 @@
+.card {
+    display: block; /* Set display to block to ensure each card is displayed in a column */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex h3,
+  .flex h4,
+  .flex button {
+    margin-right: 20px;
+  }
+  
+  .Con{
+    display: block; /* Ensure each card is displayed in a column */
+    margin: 16px auto; /* Set left and right margins to auto */
+    width: 50%;
+  }
